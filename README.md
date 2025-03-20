@@ -1,59 +1,33 @@
-UsmanDev.Tech - Personal Portfolio Website
+# UsmanDev.Tech - Personal Portfolio Website
 
-Live Website
+[![Live Website](https://img.shields.io/badge/Website-Live-green)](https://muhammad-usman-py.github.io/usmandev.tech/)
 
-Overview
+## Overview  
+My personal portfolio website showcasing my skills, projects, and contact information. Built with modern web technologies for a responsive and interactive experience.
 
-This is my personal portfolio website showcasing my skills, projects, and contact information. It is built using modern web technologies to provide a responsive and interactive experience.
+## Features  
+- **About Me**: Background and expertise section  
+- **Projects Showcase**: Display of best work with GitHub links  
+- **Contact Section**: Connect via social media or email  
+- **Responsive Design**: Optimized for all devices  
 
-Features
+## Technologies Used  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Framework**: Bootstrap  
+- **Icons**: Font Awesome  
+- **Hosting**: GitHub Pages
 
-About Me section detailing my background and expertise.
+## 📢 Connect with Me
 
-Projects Showcase displaying my best work with links to GitHub repositories.
+- **🌐 Portfolio:** [usmandev.tech](https://muhammad-usman-py.github.io/usmandev.tech/)
+- **🐙 GitHub:** [@muhammad-usman-py](https://github.com/muhammad-usman-py)
+- **🔗 LinkedIn:** [@muhammad-usman-py](https://www.linkedin.com/in/muhammad-usman-py/)
+- **📘 Facebook:** [Muhammad Usman](https://web.facebook.com/muhammad.usman.py/)
+- **📸 Instagram:** [@muhammad-usman-py](https://www.instagram.com/muhammad-usman-py/)
 
-Contact Section for visitors to connect with me via social media or email.
-
-Responsive Design for seamless viewing on all devices.
-
-Technologies Used
-
-HTML, CSS, JavaScript
-
-Bootstrap for responsive design
-
-Font Awesome for icons
-
-GitHub Pages for hosting
-
-Installation & Setup
-
-To run this website locally:
-
-Clone the repository:
-
-Navigate to the project folder:
-
-Open index.html in your browser.
-
-Deployment
-
-This website is hosted using GitHub Pages. Any updates pushed to the main branch will be automatically reflected on the live site.
-
-Contributing
-
-Feel free to suggest improvements or fork the project. Contributions are welcome!
-
-Connect with Me
-
-Portfolio: muhammad-usman-py.github.io/usmandev.tech
-
-GitHub: @muhammad-usman-py
-
-LinkedIn: @muhammad-usman-py
-
-Facebook: Muhammad Usman
-
-Instagram: Instagram
-
-⭐ If you like this project, consider giving it a star on GitHub!
+## Installation & Setup  
+To run locally:  
+```bash
+git clone https://github.com/muhammad-usman-py/usmandev.tech.git
+cd usmandev.tech
+open index.html
