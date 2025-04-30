@@ -50,3 +50,50 @@ function showToast(message, type = 'info') {
         toast.remove();
     }, 4000);
 }
+
+
+
+// Form submission handler
+document.getElementById('submit-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    const form = document.getElementById('contact-form');
+    const link = this;
+    const originalHtml = link.innerHTML;
+    
+    // Show loading state
+    link.innerHTML = `
+        <span class="button__text">Sending...</span>
+        <i class="uil uil-process button__icon"></i>
+    `;
+    
+    // Validate and submit
+    if (form.checkValidity()) {
+        const formData = new FormData(form);
+        
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                form.reset();
+                showToast('Message sent!', 'success');
+            } else {
+                showToast('Error sending message', 'error');
+            }
+        }).finally(() => {
+            link.innerHTML = originalHtml;
+        });
+    } else {
+        link.innerHTML = originalHtml;
+        form.reportValidity();
+    }
+});
+
+// Add touch support for mobile
+document.getElementById('submit-link').addEventListener('touchend', function(e) {
+    this.click();
+    e.preventDefault();
+});
