@@ -34,3 +34,21 @@
 .toast-error {
     background: #F44336;
 }
+
+
+/* Make anchor behave like button */
+a.button {
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Loading animation */
+.uil-process {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
