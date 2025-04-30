@@ -53,47 +53,40 @@ function showToast(message, type = 'info') {
 
 
 
-// Form submission handler
-document.getElementById('submit-link').addEventListener('click', function(e) {
+// JavaScript
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const form = document.getElementById('contact-form');
-    const link = this;
-    const originalHtml = link.innerHTML;
     
+    const form = e.target;
+    const button = form.querySelector('button[type="submit"]');
+    const originalHTML = button.innerHTML;
+
     // Show loading state
-    link.innerHTML = `
+    button.innerHTML = `
         <span class="button__text">Sending...</span>
         <i class="uil uil-process button__icon"></i>
     `;
-    
-    // Validate and submit
-    if (form.checkValidity()) {
-        const formData = new FormData(form);
-        
-        fetch(form.action, {
+    button.disabled = true;
+
+    try {
+        const response = await fetch(form.action, {
             method: 'POST',
-            body: formData,
+            body: new FormData(form),
             headers: {
                 'Accept': 'application/json'
             }
-        }).then(response => {
-            if (response.ok) {
-                form.reset();
-                showToast('Message sent!', 'success');
-            } else {
-                showToast('Error sending message', 'error');
-            }
-        }).finally(() => {
-            link.innerHTML = originalHtml;
         });
-    } else {
-        link.innerHTML = originalHtml;
-        form.reportValidity();
-    }
-});
 
-// Add touch support for mobile
-document.getElementById('submit-link').addEventListener('touchend', function(e) {
-    this.click();
-    e.preventDefault();
+        if (response.ok) {
+            form.reset();
+            showToast('Message sent successfully!', 'success');
+        } else {
+            showToast('Error sending message', 'error');
+        }
+    } catch (error) {
+        showToast('Network error', 'error');
+    } finally {
+        button.innerHTML = originalHTML;
+        button.disabled = false;
+    }
 });
