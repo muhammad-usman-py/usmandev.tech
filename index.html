@@ -688,6 +688,7 @@
         </section>
 
         <!--===================== Contact Me =====================-->
+
 <section class="contact section" id="contact">
     <h2 class="section__title">Contact Me</h2>
     <span class="section__subtitle">Get in touch</span>
@@ -696,16 +697,16 @@
         <div>
             <div class="contact__information">
                 <i class="uil uil-calling contact__icon"></i>
-
                 <div>
-                    <h3 class="contact__title">Contact Me</h3>
-                    <span class="contact__subtitle"><a href="tel:6362243314"></a>+92 3114155423</span>
+                    <h3 class="contact__title">Phone</h3>
+                    <span class="contact__subtitle">
+                        <a href="tel:+923114155423">+92 311 4155423</a>
+                    </span>
                 </div>
             </div>
 
             <div class="contact__information">
                 <i class="uil uil-envelope-minus contact__icon"></i>
-
                 <div>
                     <h3 class="contact__title">Email</h3>
                     <span class="contact__subtitle">usman@webotechstudio.com</span>
@@ -714,10 +715,9 @@
 
             <div class="contact__information">
                 <i class="uil uil-map-marker contact__icon"></i>
-
                 <div>
                     <h3 class="contact__title">Location</h3>
-                    <span class="contact__subtitle">Dunyapur, Punjab, Pakistan,59120</span>
+                    <span class="contact__subtitle">Dunyapur, Punjab, Pakistan, 59120</span>
                 </div>
             </div>
         </div>
@@ -726,36 +726,34 @@
             <div class="contact__inputs grid">
                 <div class="contact__content">
                     <label for="name" class="content__label">Name</label>
-                    <input type="text" name="name" class="contact__input" required>
+                    <input id="name" type="text" name="name" class="contact__input" required>
                 </div>
 
                 <div class="contact__content">
                     <label for="email" class="content__label">Email</label>
-                    <input type="email" name="_replyto" class="contact__input" required>
+                    <input id="email" type="email" name="_replyto" class="contact__input" required>
                 </div>
             </div>
 
             <div class="contact__content">
                 <label for="message" class="content__label">Message</label>
-                <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                <textarea id="message" name="message" cols="0" rows="7" class="contact__input" required></textarea>
             </div>
 
-            <!-- Hidden Fields for Better Configuration -->
+            <!-- Hidden Fields -->
             <input type="hidden" name="_language" value="en">
             <input type="hidden" name="_next" value="https://usmandev.tech/#contact">
 
-            <!-- Form Submit Button -->
+            <!-- Submit Button -->
             <div>
-                <a type="submit" class="button button--flex">
-                   <span class="button__text">Send Message</span>
-                    <i class="uil uil-message button__icon"></i>    
-                </a>
+                <button type="submit" class="button button--flex">
+                    <span class="button__text">Send Message</span>
+                    <i class="uil uil-message button__icon"></i>
+                </button>
             </div>
         </form>
     </div>
 </section>
-</main>
-
 
 
   
