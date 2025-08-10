@@ -85,6 +85,36 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         }
     } catch (error) {
         showToast('Network error', 'error');
+        
+// Simple modal handler — attach after DOM loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const viewBtns = document.querySelectorAll('.services__button');
+  const modals = document.querySelectorAll('.services__modal');
+  const closeBtns = document.querySelectorAll('.services__modal-close');
+
+  viewBtns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      // hide others
+      modals.forEach(m => m.classList.remove('active'));
+      // show modal corresponding to the button index
+      if (modals[i]) modals[i].classList.add('active');
+    });
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.services__modal').classList.remove('active');
+    });
+  });
+
+  // close clicking outside modal content
+  modals.forEach(modal => {
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.remove('active');
+    });
+  });
+});
+
     } finally {
         button.innerHTML = originalHTML;
         button.disabled = false;
