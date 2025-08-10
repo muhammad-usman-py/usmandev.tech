@@ -135,3 +135,63 @@ body {
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+
+/* ================== FOOTER ================== */
+.footer {
+  width: 100%;
+}
+
+.footer__bg {
+  background-color: #4e4de4; /* pick your footer color */
+  padding: 2rem 0 1rem;
+  width: 100%;
+}
+
+.footer__container {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer__subtitle {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__social {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer__copy {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
