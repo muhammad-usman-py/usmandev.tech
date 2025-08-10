@@ -135,3 +135,8 @@ body {
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+.services__modal { display:none; position:fixed; inset:0; align-items:center; justify-content:center; background:rgba(0,0,0,.5); z-index:999; }
+.services__modal.active { display:flex; }
+.services__modal-content { max-width:720px; width:90%; background:#fff; padding:1.25rem; border-radius:10px; }
+
+
