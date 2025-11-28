@@ -341,13 +341,16 @@ img {
 }
 
 /*================== Buttons ===================*/
+button{
+  background-color: aqua;
+}
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: black;
   color: #fff;
   padding: 1rem;
   margin-bottom: 10px;
-  border-radius: 0.5rem;
+  border-radius: 3rem;
   font-weight: var(--font-medium);
 }
 
