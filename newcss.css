@@ -803,6 +803,7 @@ button{
 
 .footer__container {
   row-gap: 3.5rem;
+  
 }
 
 .footer__bg {
@@ -834,6 +835,10 @@ button{
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
 }
+
+.footer__socials {
+    display: flex;
+  }
 
 .footer__social:hover {
   color: var(--first-color-lighter);
@@ -1133,7 +1138,7 @@ button{
   }
 
   .footer__socials {
-    justify-self: flex-end;
+    display: flex;
   }
 
   .footer__copy {
