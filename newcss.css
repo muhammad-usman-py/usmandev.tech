@@ -1133,7 +1133,7 @@ button{
   }
 
   .footer__links {
-    flex-direction: row;
+    display: flex
     column-gap: 2rem;
   }
 
