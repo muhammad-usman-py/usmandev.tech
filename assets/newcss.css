@@ -17,6 +17,7 @@
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --calendar: #555555;
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
@@ -582,7 +583,7 @@ img {
 
 .qualification__calender {
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: var(--calendar);
 }
 
 .qualification__rounder {
@@ -743,6 +744,11 @@ img {
 .swiper-button-prev,
 .swiper-pagination-bullets {
   outline: none;
+}
+
+.swiper-pagination-bullet {
+    padding: 8px;
+    margin: 0 6px; 
 }
 
 /*================ Contact Me ===============*/
