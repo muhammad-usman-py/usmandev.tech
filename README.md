@@ -1,6 +1,6 @@
 # UsmanDev.Tech - Personal Portfolio Website
 
-[![Live Website](https://img.shields.io/badge/Website-Live-green)](https://muhammad-usman-py.github.io/usmandev.tech/)
+[![Live Website](https://img.shields.io/badge/Website-Live-green)](https://usmandeve.me/)
 
 ## Overview  
 My personal portfolio website showcasing my skills, projects, and contact information. Built with modern web technologies for a responsive and interactive experience.
